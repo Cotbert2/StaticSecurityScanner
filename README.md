@@ -38,3 +38,14 @@ python scripts/preview_features.py
 El diccionario y la procedencia del piloto están en `data/`. Los notebooks
 incluyen celdas ejecutables para Sample, Explore y Modify. El entrenamiento, la
 evaluación y el escaneo de repositorios quedan pendientes.
+
+## Inventario preliminar de un proyecto
+
+```bash
+static-security-scanner discover .
+```
+
+El comando imprime un inventario JSON de directorios candidatos según sus
+manifiestos y de archivos fuente Python, JavaScript y TypeScript. Un
+`pom.xml` identifica un directorio candidato. Los archivos `.java` quedan
+fuera del inventario actual. El comando solo examina rutas.

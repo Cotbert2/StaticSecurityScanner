@@ -1,9 +1,11 @@
 """Punto de entrada de la herramienta."""
 
 import argparse
+import json
 from pathlib import Path
 
 from . import pilot
+from .discovery import discover_project
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -23,12 +25,21 @@ def main(argv: list[str] | None = None) -> None:
         if name in {"demo", "explore-pilot"}:
             command.add_argument("--output", type=Path, default=Path("reports/pilot"), help="Carpeta de gráficos")
 
+    discover = commands.add_parser(
+        "discover", help="Inventaría servicios candidatos y archivos fuente"
+    )
+    discover.add_argument("project", type=Path, nargs="?", default=Path("."))
+
     args = parser.parse_args(argv)
     if args.command is None:
         parser.print_help()
         return
 
     try:
+        if args.command == "discover":
+            print(json.dumps(discover_project(args.project), ensure_ascii=False, indent=2))
+            return
+
         rows = pilot.validate(args.input)
         print(f"Validación: {len(rows)} registros válidos en {args.input}")
         if args.command in {"demo", "explore-pilot"}:
