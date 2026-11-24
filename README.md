@@ -14,10 +14,27 @@ static-security-scanner --help
 jupyter lab
 ```
 
-## Estado del avance
+## Demostración del piloto
 
-- `src/static_security_scanner/` contiene el punto de entrada de la CLI. El comando muestra la ayuda.
-- `data/` contiene el esquema del dataset piloto, el diccionario de datos y la plantilla de correspondencias CWE–OWASP.
-- `notebooks/` contiene guías de trabajo para Sample, Explore y Modify.
+Desde la raíz del repositorio, con el entorno activado:
 
-El primer hito contempla poblar el piloto, documentar sus fuentes, explorar su distribución y preparar una muestra de la transformación TF-IDF. El entrenamiento, la evaluación, el análisis de proyectos y la exportación de reportes quedan pendientes.
+```bash
+static-security-scanner demo
+```
+
+El comando valida los 24 ejemplos controlados de Java y Python, guarda tres
+gráficos en `reports/pilot/` y muestra una vista previa de TF-IDF. La vista
+previa reserva proyectos completos y ajusta el vectorizador con el resto.
+En JupyterLab puedes abrir los PNG desde el panel de archivos.
+
+Las etapas también se pueden ejecutar por separado:
+
+```bash
+python scripts/validate_pilot.py
+python scripts/explore_pilot.py
+python scripts/preview_features.py
+```
+
+El diccionario y la procedencia del piloto están en `data/`. Los notebooks
+incluyen celdas ejecutables para Sample, Explore y Modify. El entrenamiento, la
+evaluación y el escaneo de repositorios quedan pendientes.
