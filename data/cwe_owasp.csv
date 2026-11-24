@@ -1,1 +1,5 @@
 cwe_id,owasp_id,source_url,notes
+CWE-489,A02:2025,https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/,Mapeo del piloto para depuración habilitada en despliegue
+CWE-614,A02:2025,https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/,Mapeo del piloto para cookie de sesión sin Secure
+CWE-489,API8:2023,https://owasp.org/API-Security/editions/2023/en/0xa8-security-misconfiguration/,Mapeo contextual para configuración de un servicio API
+CWE-614,API8:2023,https://owasp.org/API-Security/editions/2023/en/0xa8-security-misconfiguration/,Mapeo contextual para cookie de sesión de un servicio API

@@ -1,1 +1,25 @@
 id,source_project,source_ref,source_path,language,artifact_type,content,is_vulnerable,cwe_ids,owasp_web_ids,owasp_api_ids
+catalog-debug-0,catalog,data/pilot_sources.md,data/pilot.csv#catalog-debug-0,Java,config,boolean CatalogDebug = false;,0,,,
+catalog-debug-1,catalog,data/pilot_sources.md,data/pilot.csv#catalog-debug-1,Java,config,boolean CatalogDebug = true;,1,CWE-489,A02:2025,API8:2023
+catalog-cookie-0,catalog,data/pilot_sources.md,data/pilot.csv#catalog-cookie-0,Java,config,CatalogSessionCookie.setSecure(true);,0,,,
+catalog-cookie-1,catalog,data/pilot_sources.md,data/pilot.csv#catalog-cookie-1,Java,config,CatalogSessionCookie.setSecure(false);,1,CWE-614,A02:2025,API8:2023
+inventory-debug-0,inventory,data/pilot_sources.md,data/pilot.csv#inventory-debug-0,Python,config,inventory_app.config['DEBUG'] = False,0,,,
+inventory-debug-1,inventory,data/pilot_sources.md,data/pilot.csv#inventory-debug-1,Python,config,inventory_app.config['DEBUG'] = True,1,CWE-489,A02:2025,API8:2023
+inventory-cookie-0,inventory,data/pilot_sources.md,data/pilot.csv#inventory-cookie-0,Python,config,inventory_app.config['SESSION_COOKIE_SECURE'] = True,0,,,
+inventory-cookie-1,inventory,data/pilot_sources.md,data/pilot.csv#inventory-cookie-1,Python,config,inventory_app.config['SESSION_COOKIE_SECURE'] = False,1,CWE-614,A02:2025,API8:2023
+orders-debug-0,orders,data/pilot_sources.md,data/pilot.csv#orders-debug-0,Java,config,boolean OrdersDebug = false;,0,,,
+orders-debug-1,orders,data/pilot_sources.md,data/pilot.csv#orders-debug-1,Java,config,boolean OrdersDebug = true;,1,CWE-489,A02:2025,API8:2023
+orders-cookie-0,orders,data/pilot_sources.md,data/pilot.csv#orders-cookie-0,Java,config,OrdersSessionCookie.setSecure(true);,0,,,
+orders-cookie-1,orders,data/pilot_sources.md,data/pilot.csv#orders-cookie-1,Java,config,OrdersSessionCookie.setSecure(false);,1,CWE-614,A02:2025,API8:2023
+payments-debug-0,payments,data/pilot_sources.md,data/pilot.csv#payments-debug-0,Python,config,payments_app.config['DEBUG'] = False,0,,,
+payments-debug-1,payments,data/pilot_sources.md,data/pilot.csv#payments-debug-1,Python,config,payments_app.config['DEBUG'] = True,1,CWE-489,A02:2025,API8:2023
+payments-cookie-0,payments,data/pilot_sources.md,data/pilot.csv#payments-cookie-0,Python,config,payments_app.config['SESSION_COOKIE_SECURE'] = True,0,,,
+payments-cookie-1,payments,data/pilot_sources.md,data/pilot.csv#payments-cookie-1,Python,config,payments_app.config['SESSION_COOKIE_SECURE'] = False,1,CWE-614,A02:2025,API8:2023
+shipping-debug-0,shipping,data/pilot_sources.md,data/pilot.csv#shipping-debug-0,Java,config,boolean ShippingDebug = false;,0,,,
+shipping-debug-1,shipping,data/pilot_sources.md,data/pilot.csv#shipping-debug-1,Java,config,boolean ShippingDebug = true;,1,CWE-489,A02:2025,API8:2023
+shipping-cookie-0,shipping,data/pilot_sources.md,data/pilot.csv#shipping-cookie-0,Java,config,ShippingSessionCookie.setSecure(true);,0,,,
+shipping-cookie-1,shipping,data/pilot_sources.md,data/pilot.csv#shipping-cookie-1,Java,config,ShippingSessionCookie.setSecure(false);,1,CWE-614,A02:2025,API8:2023
+support-debug-0,support,data/pilot_sources.md,data/pilot.csv#support-debug-0,Python,config,support_app.config['DEBUG'] = False,0,,,
+support-debug-1,support,data/pilot_sources.md,data/pilot.csv#support-debug-1,Python,config,support_app.config['DEBUG'] = True,1,CWE-489,A02:2025,API8:2023
+support-cookie-0,support,data/pilot_sources.md,data/pilot.csv#support-cookie-0,Python,config,support_app.config['SESSION_COOKIE_SECURE'] = True,0,,,
+support-cookie-1,support,data/pilot_sources.md,data/pilot.csv#support-cookie-1,Python,config,support_app.config['SESSION_COOKIE_SECURE'] = False,1,CWE-614,A02:2025,API8:2023

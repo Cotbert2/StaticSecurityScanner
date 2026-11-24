@@ -1,6 +1,6 @@
 # Diccionario de datos
 
-Cada fila de `pilot.csv` representa un fragmento de código o configuración con una etiqueta revisada. Ambos CSV contienen únicamente sus encabezados.
+Cada fila de `pilot.csv` representa un fragmento de código o configuración con una etiqueta revisada. La procedencia del piloto se documenta en [pilot_sources.md](pilot_sources.md).
 
 | Campo | Descripción |
 | --- | --- |
