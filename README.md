@@ -1,0 +1,2 @@
+# StaticSecurityScanner
+A Security Scanner
